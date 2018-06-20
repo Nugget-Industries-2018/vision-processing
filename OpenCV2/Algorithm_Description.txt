@@ -1,0 +1,11 @@
+#######################
+Algorithm Description
+#######################
+
+This algorithm is used to connect to a livestream via IP adress and detect any and all 
+shapes with their corresponding colors. After it does this it will overlay the corresponding aircraft.
+First the code connects to the livestream via the cv2.VideoCapture command, once we have a live feed at the ready 
+we define masks to detect for red, blue, and yellow. Once the mask is applied to the video capture variable, we 
+find the contours and loop over them. Set conditional statements to determine if shape is a triangle or square/rectangle.
+We then match the combination of color and shape to the designated aircraft. Lastly we overlay the data we've collected
+and display it on the live feed.
